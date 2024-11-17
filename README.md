@@ -1,6 +1,6 @@
 # Document ChatBot with vLLM
 
-A powerful document chatbot that combines vLLM, FastAPI, and Streamlit to provide intelligent responses based on uploaded documents. The system supports both OpenAI GPT and Llama 3 models, featuring real-time streaming responses and conversation memory.
+A powerful document chatbot that combines vLLM, FastAPI, and Streamlit to provide intelligent responses based on uploaded documents. The system supports both 'OpenAI GPT' and `Llama 3` models, featuring real-time streaming responses and conversation memory.
 
 ## Features
 - 📑 Document Processing: Upload and process PDF documents
