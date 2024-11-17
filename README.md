@@ -90,9 +90,9 @@ mkdir -p data/uploads data/vector_store
 
 6. Start the services:
 python scripts/start_services.py
-
+```
 ### Method 2: Docker Installation (Recommended for Production)
-
+```bash
 1. Install Docker:
 
 # Install Docker
@@ -123,7 +123,7 @@ docker-compose up --build
 
 4. Stop services:
 docker-compose down
-
+```
 ## Usage
 ### Access the interfaces:
 - Streamlit UI: http://localhost:8501
