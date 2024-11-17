@@ -72,9 +72,9 @@ document-chatbot/
 ## Installation Methods
 
 ### Method 1: Direct Installation (Recommended for Development)
-
-1. Install NVIDIA Driver and CUDA Toolkit:
 ```bash
+1. Install NVIDIA Driver and CUDA Toolkit:
+
 # Add NVIDIA package repositories
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
 sudo mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600
