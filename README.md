@@ -12,6 +12,19 @@ A powerful document chatbot that combines vLLM, FastAPI, and Streamlit to provid
 - 🔄 Context Retention: Maintains conversation context (Working on it)
 - 📈 Source Citations: Provides references for responses
 
+## Demo
+
+https://github.com/MohamedSebaie/document-chatbot/demo.mp4
+
+For the full demonstration video, check out our [detailed walkthrough](demo.mp4).
+
+### Features Demonstrated
+- 📝 Document Upload & Processing
+- 💬 Interactive Chat Interface
+- 🔍 Context-Aware Responses
+- 📚 Source Citations
+- ⚡ Real-time Processing
+  
 ## System Requirements
 - NVIDIA Driver >= 525.60.13
 - CUDA Toolkit >= 12.1
