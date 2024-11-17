@@ -14,7 +14,7 @@ A powerful document chatbot that combines vLLM, FastAPI, and Streamlit to provid
 
 ## Demo
 
-![Demo Preview](demo.gif)
+![Demo Preview](./demo.gif)
 
 ### Features Demonstrated
 - 📝 Document Upload & Processing
