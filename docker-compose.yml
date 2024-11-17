@@ -1,38 +1,41 @@
 version: '3.8'
+
 services:
- chatbot:
-   build:
-     context: .
-     dockerfile: Dockerfile
-   runtime: nvidia
-   shm_size: '16gb'
-   ports:
-     - "8000:8000"
-     - "8080:8080"
-     - "8501:8501"
-   volumes:
-     - ./data:/app/data
-   environment:
-     - NVIDIA_VISIBLE_DEVICES=all
-     - CUDA_VISIBLE_DEVICES=all
-     - NCCL_DEBUG=INFO
-     - NCCL_IB_DISABLE=1
-     - NCCL_P2P_DISABLE=1
-     - CUDA_DEVICE_ORDER=PCI_BUS_ID
-     - RAY_IGNORE_UNHANDLED_ERRORS=1
-     - LD_LIBRARY_PATH=/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/cuda/lib64
-   ulimits:
-     memlock: -1
-     stack: 67108864
-   deploy:
-     resources:
-       reservations:
-         devices:
-           - driver: nvidia
-             count: all
-             capabilities: [gpu]
-   ipc: host
-   network_mode: "host"
-   privileged: true
+  chatbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    runtime: nvidia
+    shm_size: '16gb'
+    ports:
+      - "8000:8000"  # vLLM
+      - "8080:8080"  # FastAPI
+      - "8501:8501"  # Streamlit
+    volumes:
+      - ./data:/app/data
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - CUDA_VISIBLE_DEVICES=all
+      - NCCL_DEBUG=INFO
+      - NCCL_IB_DISABLE=1
+      - NCCL_P2P_DISABLE=1
+      - CUDA_DEVICE_ORDER=PCI_BUS_ID
+      - RAY_IGNORE_UNHANDLED_ERRORS=1
+      - LD_LIBRARY_PATH=/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/cuda/lib64
+      - CONDA_DEFAULT_ENV=vllm_env
+    ulimits:
+      memlock: -1
+      stack: 67108864
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    ipc: host
+    network_mode: "host"
+    privileged: true
+
 volumes:
- data:
+  data:
