@@ -40,31 +40,34 @@ A powerful document chatbot that combines vLLM, FastAPI, and Streamlit to provid
 - **Containerization**: Docker
 
 ## Project Structure
+
+```plaintext
 document-chatbot/
 ├── app/
-│ ├── api/
-│ │ └── routes.py # FastAPI routes
-│ └── core/
-│ ├── config.py # Configuration settings
-│ ├── document_processor.py # PDF processing
-│ └── exceptions.py # Custom exceptions
-│ ├── llm_manager.py # LLM integration
-│ └── memory_manager.py # Conversation memory
+│   ├── api/
+│   │   └── routes.py         # FastAPI routes
+│   └── core/
+│       ├── config.py         # Configuration settings
+│       ├── document_processor.py  # PDF processing
+│       ├── exceptions.py     # Custom exceptions
+│       ├── llm_manager.py    # LLM integration
+│       └── memory_manager.py # Conversation memory
 ├── frontend/
-├── components/
-│   ├── chat_interface.py # Streamlit chat interface
-│   ├── document_uploader.py # File upload handling
-    ├── model_selector.py # File model selector
-│ └── app.py # Streamlit application
+│   ├── app.py               # Streamlit application
+│   └── components/
+│       ├── chat_interface.py    # Streamlit chat interface
+│       ├── document_uploader.py # File upload handling
+│       └── model_selector.py    # Model selector
 ├── scripts/
-│ └── start_services.py # Service orchestration
+│   └── start_services.py    # Service orchestration
 ├── data/
-│ ├── uploads/ # Document storage
-│ └── vector_store/ # FAISS indexes
+│   ├── uploads/             # Document storage
+│   └── vector_store/        # FAISS indexes
 ├── Dockerfile
 ├── docker-compose.yml
-├── vllm_env.yaml # Conda environment
+├── vllm_env.yaml            # Conda environment
 └── README.md
+```
 
 ## Installation Methods
 
