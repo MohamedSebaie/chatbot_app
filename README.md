@@ -24,7 +24,7 @@ A powerful document chatbot that combines vLLM, FastAPI, and Streamlit to provid
 - ⚡ Real-time Processing
   
 ## System Requirements
-- NVIDIA Driver >= 525.60.13
+- NVIDIA Driver
 - CUDA Toolkit >= 12.1
 - Python 3.10+
 - 16GB+ RAM
