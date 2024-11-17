@@ -9,7 +9,7 @@ A powerful document chatbot that combines vLLM, FastAPI, and Streamlit to provid
 - 🚀 High Performance: Tensor parallelism support with vLLM
 - 🌐 Modern Interface: Streamlit-based UI with real-time responses
 - 📚 Multi-document Support: Chat with multiple uploaded documents
-- 🔄 Context Retention: Maintains conversation context
+- 🔄 Context Retention: Maintains conversation context (Working on it)
 - 📈 Source Citations: Provides references for responses
 
 ## System Requirements
