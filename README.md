@@ -14,9 +14,7 @@ A powerful document chatbot that combines vLLM, FastAPI, and Streamlit to provid
 
 ## Demo
 
-https://github.com/MohamedSebaie/document-chatbot/demo.mp4
-
-For the full demonstration video, check out our [detailed walkthrough](demo.mp4).
+![Demo Preview](demo.gif)
 
 ### Features Demonstrated
 - 📝 Document Upload & Processing
