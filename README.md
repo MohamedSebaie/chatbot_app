@@ -34,7 +34,7 @@ A powerful document chatbot that combines vLLM, FastAPI, and Streamlit to provid
 - **Backend**: FastAPI
 - **Frontend**: Streamlit
 - **Models**: OpenAI GPT, Llama 3
-- **GPU parallelism**: vLLM
+- **GPU Parallelism**: vLLM
 - **Vector Store**: FAISS
 - **Document Processing**: PyPDF2, LangChain
 - **Containerization**: Docker
