@@ -1,19 +1,6 @@
-# Document ChatBot
-
-## Overview
-An advanced document chatbot system that allows users to upload PDF documents and interact with them using state-of-the-art language models. The system supports both OpenAI GPT and Llama 3 models, featuring real-time streaming responses and conversation memory.
-
-## Features
-- 📄 PDF document processing and analysis
-- 💬 Real-time chat with streaming responses
-- 🔄 Multiple model support (OpenAI GPT and Llama 3)
-- 🧠 Conversation memory and context awareness
-- 📱 Responsive web interface
-- 🔒 Local deployment option
-- 🐳 Docker support
 # Document ChatBot with vLLM
 
-A powerful document chatbot that combines vLLM, FastAPI, and Streamlit to provide intelligent responses based on uploaded documents.
+A powerful document chatbot that combines vLLM, FastAPI, and Streamlit to provide intelligent responses based on uploaded documents. The system supports both OpenAI GPT and Llama 3 models, featuring real-time streaming responses and conversation memory.
 
 ## Features
 - 📑 Document Processing: Upload and process PDF documents
@@ -36,10 +23,11 @@ A powerful document chatbot that combines vLLM, FastAPI, and Streamlit to provid
 - **Backend**: FastAPI
 - **Frontend**: Streamlit
 - **Models**: OpenAI GPT, Llama 3
+- **GPU parallelism**: vLLM
 - **Vector Store**: FAISS
 - **Document Processing**: PyPDF2, LangChain
 - **Containerization**: Docker
-- 
+
 ## Project Structure
 document-chatbot/
 ├── app/
